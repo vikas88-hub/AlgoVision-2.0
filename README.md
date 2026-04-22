@@ -8,7 +8,7 @@ A unified analytics platform integrating core Data Structures &amp; Algorithms t
 * **Visualization:** Mapped and displayed using Graph data structures.
 
 ## Tech Stack
-* **Language:** [Insert Python, Java, or C here]
+* **Language:** [Insert Python or Java here]
 * **Libraries/Tools:** [Insert any specific libraries you end up using]
 
 ## Deliverables Status
