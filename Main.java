@@ -1,5 +1,5 @@
 import dataingestion.Dataingestion;
-import dataingestion.DataHashMap;
+import dataingestion.DatahashMap;
 import cataloging.ProductCatalog;
 import searchengine.BST;
 import searchengine.MinHeap;
