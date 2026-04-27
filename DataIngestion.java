@@ -41,7 +41,7 @@ class DataQueue {
     public int size()        { return size; }
 
     public void display() {
-        System.out.print("  Queue [front→rear]: ");
+        System.out.print("  Queue [front to rear]: ");
         Node curr = front;
         while (curr != null) {
             System.out.print(curr.data + (curr.next != null ? " | " : ""));
@@ -51,11 +51,6 @@ class DataQueue {
     }
 }
 
-
-// ─────────────────────────────────────────────
-//  HASH MAP  (Separate Chaining)
-//  Time: Insert/Search → O(1) average
-// ─────────────────────────────────────────────
 class DataHashMap {
 
     private static class Entry {
@@ -90,7 +85,7 @@ class DataHashMap {
         node.next  = table[idx];
         table[idx] = node;
         size++;
-        System.out.println("  [INSERT] " + key + " → " + value + "  (bucket " + idx + ")");
+        System.out.println("  [INSERT] " + key + " = " + value + " (bucket " + idx + ")");
     }
 
     public String search(String key) {
@@ -125,7 +120,7 @@ class DataHashMap {
                 Entry cur = table[i];
                 while (cur != null) {
                     System.out.print("[" + cur.key + "=" + cur.value + "]");
-                    if (cur.next != null) System.out.print(" → ");
+                    if (cur.next != null) System.out.print(" -> ");
                     cur = cur.next;
                 }
                 System.out.println();
@@ -134,3 +129,4 @@ class DataHashMap {
         System.out.println("  Total entries: " + size);
     }
 }
+
